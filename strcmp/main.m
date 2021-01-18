@@ -10,7 +10,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
       
-        
         const char* szParam = "zack";
         if (strcmp(szParam, "zack") == 0 ) {
             printf("yes\n");
