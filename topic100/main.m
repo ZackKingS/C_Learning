@@ -33,7 +33,8 @@ int main()
         (ptr+i)->avg = ((ptr+i)->Chinese + (ptr+i)->Math + (ptr+i)->English)/3;
     }
 
-    int result=fprintf(file,"学号\t%-20s\t语文\t数学\t英语\t平均成绩\n","姓名");
+    //向test.txt文件中写入数据
+    int result = fprintf(file,"学号\t%-20s\t语文\t数学\t英语\t平均成绩\n","姓名");
     if(result<0)
     {
         printf("写入文件stud失败！\n");
@@ -42,7 +43,8 @@ int main()
 
     for(int i=0;i<5;i++)
     {
-        result=fprintf(file,"%-3d\t%-20s\t%3.1f\t%3.1f\t%3.1f\t%3.1f\n",(ptr+i)->number,(ptr+i)->name,(ptr+i)->Chinese,(ptr+i)->Math,(ptr+i)->English,(ptr+i)->avg);
+        //向test.txt文件中写入数据
+        result = fprintf(file,"%-3d\t%-20s\t%3.1f\t%3.1f\t%3.1f\t%3.1f\n",(ptr+i)->number,(ptr+i)->name,(ptr+i)->Chinese,(ptr+i)->Math,(ptr+i)->English,(ptr+i)->avg);
         if(result<0)
         {
             printf("写入文件stud失败！\n");
