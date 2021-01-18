@@ -20,7 +20,14 @@ int main(int argc, const char * argv[]) {
     char *description;
     /* 动态分配内存 */
     description = (char *)malloc( 200 * sizeof(char) );
-    strcpy( description, "Zara ali a DPS student in class 10th");
+    if( description == NULL )
+    {
+        fprintf(stderr, "Error - unable to allocate required memory\n");
+    }
+    else
+    {
+        strcpy( description, "Zara ali a DPS student in class 10th");
+    }
     printf("Description: %s\n", description );
     
     return 0;
