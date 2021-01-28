@@ -39,7 +39,7 @@ void test01()
     struct Person p1 = {"tom" , 18};
     struct Person p2 = {"jerry" , 20};
     
-    p1 = p2;
+//    p1 = p2;
     
     printf("p1姓名：%s  , 年龄：%d \n",p1.name,p1.age);
     printf("p2姓名：%s  , 年龄：%d \n",p2.name,p2.age);
@@ -57,13 +57,10 @@ void test02()
     strcpy(p2.name , "jerry");
     p2.age = 666;
     
-    p1 = p2;
-    
+//    p1 = p2;
     
     printf("p1姓名：%s  , 年龄：%d \n",p1.name,p1.age);
     printf("p2姓名：%s  , 年龄：%d \n",p2.name,p2.age);
-    
-    
     
     if (p1.name != NULL) {
         free(p1.name);
