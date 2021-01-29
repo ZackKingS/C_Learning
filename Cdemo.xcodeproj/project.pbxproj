@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141C8DAF25C3E5AF00CD66B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 141C8DAE25C3E5AF00CD66B3 /* main.m */; };
 		1445825B25B5701100FBA435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1445825A25B5701100FBA435 /* main.m */; };
 		1445826A25B571B100FBA435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1445826925B571B100FBA435 /* main.m */; };
 		1445827725B571F400FBA435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1445827625B571F400FBA435 /* main.m */; };
@@ -26,6 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		141C8DAA25C3E5AF00CD66B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1445825525B5701100FBA435 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +183,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		141C8DAC25C3E5AF00CD66B3 /* memcpy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memcpy; sourceTree = BUILT_PRODUCTS_DIR; };
+		141C8DAE25C3E5AF00CD66B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1445825725B5701100FBA435 /* Cdemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cdemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		1445825A25B5701100FBA435 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1445826725B571B100FBA435 /* strcmp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = strcmp; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +222,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		141C8DA925C3E5AF00CD66B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1445825425B5701100FBA435 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,6 +344,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141C8DAD25C3E5AF00CD66B3 /* memcpy */ = {
+			isa = PBXGroup;
+			children = (
+				141C8DAE25C3E5AF00CD66B3 /* main.m */,
+			);
+			path = memcpy;
+			sourceTree = "<group>";
+		};
 		1445824E25B5701100FBA435 = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +371,7 @@
 				1445838A25B5837F00FBA435 /* topic98 */,
 				1445833E25B5825700FBA435 /* topic100 */,
 				14F0DC1D25C2717400E54F9E /* DeepCopy */,
+				141C8DAD25C3E5AF00CD66B3 /* memcpy */,
 				1445825825B5701100FBA435 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -367,6 +395,7 @@
 				1445838925B5837F00FBA435 /* topic98 */,
 				144583B025B583B500FBA435 /* topic97 */,
 				14F0DC1C25C2717400E54F9E /* DeepCopy */,
+				141C8DAC25C3E5AF00CD66B3 /* memcpy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -504,6 +533,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		141C8DAB25C3E5AF00CD66B3 /* memcpy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141C8DB225C3E5AF00CD66B3 /* Build configuration list for PBXNativeTarget "memcpy" */;
+			buildPhases = (
+				141C8DA825C3E5AF00CD66B3 /* Sources */,
+				141C8DA925C3E5AF00CD66B3 /* Frameworks */,
+				141C8DAA25C3E5AF00CD66B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memcpy;
+			productName = memcpy;
+			productReference = 141C8DAC25C3E5AF00CD66B3 /* memcpy */;
+			productType = "com.apple.product-type.tool";
+		};
 		1445825625B5701100FBA435 /* Cdemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1445825E25B5701100FBA435 /* Build configuration list for PBXNativeTarget "Cdemo" */;
@@ -784,6 +830,9 @@
 			attributes = {
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					141C8DAB25C3E5AF00CD66B3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					1445825625B5701100FBA435 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -863,11 +912,20 @@
 				1445833C25B5825700FBA435 /* topic100 */,
 				144583AF25B583B500FBA435 /* topic97 */,
 				14F0DC1B25C2717400E54F9E /* DeepCopy */,
+				141C8DAB25C3E5AF00CD66B3 /* memcpy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		141C8DA825C3E5AF00CD66B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141C8DAF25C3E5AF00CD66B3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1445825325B5701100FBA435 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -999,6 +1057,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		141C8DB025C3E5AF00CD66B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		141C8DB125C3E5AF00CD66B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		1445825C25B5701100FBA435 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1429,6 +1503,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		141C8DB225C3E5AF00CD66B3 /* Build configuration list for PBXNativeTarget "memcpy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141C8DB025C3E5AF00CD66B3 /* Debug */,
+				141C8DB125C3E5AF00CD66B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1445825225B5701100FBA435 /* Build configuration list for PBXProject "Cdemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
